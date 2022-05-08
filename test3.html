@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+        
+.navbar {
+  position: fixed;
+  top: 0%;
+  box-shadow: 0px 0px 8px rgb(0 0 0 / 100%);
+  width: 100%;
+  
+  background-image: url("https://static.vecteezy.com/system/resources/previews/000/240/889/original/abstract-comic-book-background-design-vector.jpg");
+  background-size: contain;
+
+}
+ul {
+  list-style-type: none;
+  font-family: 'Square Peg', cursive;
+  font-weight: 600;
+  margin-top: 0%;
+}
+
+li {
+  float: left;
+}
+
+li a {
+    
+  display: block;
+  padding: 25px;
+  text-decoration: none;
+  color: red;
+}
+
+.container {
+  width: 100%;
+  margin: 2% 0%;
+  padding: 6% 0%;
+}
+.banner {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+background-color: skyblue;
+}
+.banner .image img {
+  width: 100%;
+}
+
+.banner .content {
+    font-family: 'Square Peg', cursive;
+  padding: 25% 4%;
+}
+
+.content .title {
+  font-size: 50px;
+  margin: 0%;
+  font-family: 'Square Peg', cursive;
+}
+
+.title span {
+  font-weight: 700;
+}
+
+.content .desc {
+  font-size: 26px;
+}
+
+.content .btn {
+  background-color: #44ee0c;
+  color: rgb(247, 233, 233);
+  font-family: "Lato";
+  font-size: 16px;
+  font-weight: 700;
+  padding: 2% 5%;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+}
+
+
+.about {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+}
+.about .image img {
+  width: 80%;
+}
+
+.about .content {
+    font-family: 'Square Peg', cursive;
+  padding: 20% 13%;
+}
+
+.about .content .title {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0%;
+}
+
+.about .content .desc {
+  font-size: 19px;
+}
+
+
+.skills .content {
+    font-family: 'Square Peg', cursive;
+  padding: 2% 13%;
+  background-color: skyblue;
+}
+
+.skills .content .title {
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 4%;
+  text-align: center;
+}
+.skills .content .desc {
+  font-size: 19px;
+}
+
+.skills .grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  grid-row-gap: 10px;
+  grid-column-gap: 20px;
+}
+
+.skills .grid-item {
+  border: 1px solid #ddd;
+  padding: 7% 6%;
+  border-bottom: 5px solid #6b8363;
+  background-color: #21b6f1;
+  border-radius: 8px;
+}
+
+.skills .grid-item .fa-brands {
+  margin-right: 8%;
+  font-size: 19px;
+  color: #ee0909;
+}
+
+/* contact section */
+.contact {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+}
+.contact .image img {
+  width: 80%;
+}
+
+.contact .content {
+    font-family: 'Square Peg', cursive;
+  padding: 10% 13%;
+}
+
+.contact .content .title {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0%;
+  
+}
+
+.contact .content .form {
+  padding: 2% 0%;
+}
+
+.contact .content .form .field {
+  padding: 2% 0%;
+}
+
+.contact .content .form .title {
+  font-size: 10px;
+}
+.contact .content .form .input {
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  width: 55%;
+  padding: 2% 2%;
+  border: 1px solid #ddd;
+  border-radius: 50px;
+  margin-top: 2%;
+}
+
+.contact .content .btn {
+  background-color: #21b6f1;
+  color: red;
+  font-family: 'Square Peg', cursive;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 2% 10%;
+  margin-top: 3%;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+}
+
+/* footer section */
+.footer {
+  width: 100%;
+  background-color: #21b6f1;
+  font-size: 70px;
+  font-family: 'Square Peg', cursive;
+  text-align: center;
+  color: #fff;
+  padding: 2% 0;
+}
+
+.footer .footer-title h2 {
+  font-weight: 600;
+  color: #fff;
+  font-size: 30px;
+}
+
+.footer .social-sites .footer-icons a {
+  text-decoration: none !important;
+  background-color: transparent !important;
+  color: #fff;
+  padding: 10px 12px;
+  margin-right: 30px;
+}
+
+.footer .social-sites .footer-icons a:hover {
+  color: #fff;
+}
+
+.footer .footer-icons a .fab {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.footer .social-sites p {
+  font-size: 15px;
+  padding: 35px 0px;
+  color: #fff;
+}
+#kevin{
+    margin-left: 100px;
+    height: 400px;
+    width: 400px;
+    border-radius: 800px;
+    border: white dashed 5px;
+}
+
+
+    </style>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Mulish:wght@300;400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <title>Kevin Roland Portfolio</title>
+  </head>
+  <body style="margin: 0px; border: skyblue dashed 20px;">
+    <div class="main-container">
+      <div class="navbar">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="container banner" id="banner">
+        <div class="image">
+          <img id="kevin" src="https://cdn.dribbble.com/users/1920348/screenshots/4332641/shot09.gif"  alt="banner-img" />
+        </div>
+        <div class="content">
+          <p class="title">Hello! I'm <span>Kevin Roland</span></p>
+          <p class="desc">I am a Software Developer</p>
+          <button class="btn" onclick="window.location.href = '#about';">About Me</button>
+        </div>
+      </div>
+
+      <div class="container about" id="about">
+        <div class="content">
+          <p class="title">About Myself</p>
+          <p class="desc">
+            im kevin roland a software developer currently developing this portfolio 
+          </p>
+        </div>
+        <div class="image">
+          <img src="https://cdn.dribbble.com/users/1920348/screenshots/4332641/shot09.gif" alt="about-img" />
+        </div>
+      </div>
+
+      <div class="container skills" id="skills">
+        <div class="content">
+          <p class="title">Skills</p>
+          <div class="grid-container">
+            <div class="grid-item grid-item-1">
+              <i class="fa-brands fa-html5"></i>HTML
+            </div>
+            <div class="grid-item grid-item-2">
+              <i class="fa-brands fa-css3"></i>CSS
+            </div>
+            <div class="grid-item grid-item-3">
+              <i class="fa-brands fa-js"></i>Javascript
+            </div>
+            <div class="grid-item grid-item-4">
+              <i class="fa-brands fa-bootstrap"></i>Bootstrap
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container contact" id="contact">
+        <div class="image">
+          <img src="https://media.istockphoto.com/photos/call-me-handsome-young-man-showing-call-me-sign-and-smiling-picture-id860892212?k=6&m=860892212&s=170667a&w=0&h=WHH1WNf8bl2N4T1K1nSY40MXx5LKhFDo11UKinW5CA0=" alt="contact-img" />
+        </div>
+        <div class="content">
+          <p class="title">Get in touch with me here!</p>
+          <form action="/action_page.php" class="form">
+            <div class="field">
+              <label for="email" class="title">Your email id:</label><br />
+              <input
+                type="text"
+                id="email"
+                name="email"
+                value="dont type please"
+                class="input"
+              />
+            </div>
+            <div class="field">
+              <label for="lname" class="title">Message for me:</label><br />
+              <input
+                type="text"
+                id="msg"
+                name="msg"
+                value="hello people"
+                class="input"
+              />
+            </div>
+
+            <input type="submit" value="Submit" class="btn" />
+          </form>
+        </div>
+      </div>
+        <div class="footer" id="footer">
+            <div class="footer-title">
+                <h2>Kevin Roland</h2>
+                <div class="social-sites">
+                    <div class="footer-icons">
+                        <a href="#" class="ico">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="ico">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="ico">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <p>© <span id="year"></span>
+                            
+                            copyright all right reserved
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+  </body>
+</html>
