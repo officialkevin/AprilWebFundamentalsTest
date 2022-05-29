@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flexible{
+            display: flex;
+            justify-content: space-between;
+            /* border: 1px solid black; */
+           
+        
+
+        }
+        .flexible .var,.let,.const{
+            border: 10px solid black;
+            color: blue;
+            background-color: pink;
+        }
+        h1{
+            color: red;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="flexible">
+    <div class="var">
+        <ol>
+            <h1>var</h1>
+            <li>it can be updated and redeclared, but it creates unnecessary space in the memory location</li>
+            <li>it is not a fixed value and can be updated but creates different memory location for storing data</li>
+           
+               
+            <li>Example:
+                we declare var in the following way:var a=2;
+                var a=2; -declaration not a fixed value but different memory location (unnecessary space is created)
+                var a=3; -value reassign possible but on different memory location no errors 
+            </li>
+        </ol>
+
+    </div>
+    <div class="let">
+        <ol>
+            <h1>let</h1>
+            <li>it can be updated and redeclared, but it does not create unnecessary space in the memory location</li>
+            <li>it is not a fixed value and can be updated but on the same memory location is used</li>
+            <li>Example:
+                we declare let in the following way:let a=2;
+                let a=2; -declaration not a fixed value but same memory location (no unnecessary space is created)
+                let a=3; -value reassign possible but on same memory location no errors 
+                
+            </li>
+        </ol>
+
+    </div>
+    <div class="const">
+        <ol>
+            <h1>const</h1>
+            <li>it cannot be updated and redeclared, but donot creates unnecessary space in the memory location </li>
+            <li>it is a fixed value and cannot be changed once its been declared</li>
+            <li>Example:
+                we declare const in the following way:
+                const a=2; -declaration fixed value (no unnecessary space is created in memory location)
+                const a=3; -not possible result in error.
+
+
+                
+            </li>
+        </ol>
+
+    </div>
+</div>
+    
+</body>
+</html> 
