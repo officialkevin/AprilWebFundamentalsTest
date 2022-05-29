@@ -1,0 +1,5 @@
+1.null-null means an empty value null is assigned and means nothing
+
+2.undefined- whenever we declare a variable without assigning any value to it javascript assigns its value as undefined  
+
+3.not defined- not defined is a variable which is not declared  
