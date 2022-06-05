@@ -23,4 +23,4 @@ const findPrime = num => {
  }
 
 let n = prompt("Enter the nth number that you want to sum");
- console.log( "Nth prime number."findPrime(n));
+ console.log( "Nth prime number."+findPrime(n));
