@@ -1,0 +1,75 @@
+1. for Loop
+Example of using for loop:
+var myArray = [
+    {id: 1, name: 'John', age: 12},
+    {id: 2, name: 'Jane', age: 14},
+    {id: 3, name: 'Martin', age: 13},
+    {id: 4, name: 'Katie', age: 17},
+    {id: 5, name: 'Louis', age: 11}
+];
+
+for(let i = 0; i < myArray.length; i++){
+    console.log(myArray[i].name);
+}
+
+/*
+Output:
+    John
+    Jane
+    Martin
+    Katie
+    Louis
+*/
+
+2. while Loop
+Example
+var myArray = [
+    {id: 1, name: 'John', age: 12},
+    {id: 2, name: 'Jane', age: 14},
+    {id: 3, name: 'Martin', age: 13},
+    {id: 4, name: 'Katie', age: 17},
+    {id: 5, name: 'Louis', age: 11}
+];
+
+var i = 0;
+while(i < myArray.length) {
+    console.log(myArray[i].name)
+    i++
+}
+
+/*
+Output:
+  John
+  Jane
+  Martin
+  Katie
+  Louis
+*/
+
+3. do/while Loop
+example
+
+The do/while loop is in fact very similar to while loop.
+
+var myArray = [
+    {id: 1, name: 'John', age: 12},
+    {id: 2, name: 'Jane', age: 14},
+    {id: 3, name: 'Martin', age: 13},
+    {id: 4, name: 'Katie', age: 17},
+    {id: 5, name: 'Louis', age: 11}
+];
+
+var i = 0;
+do {
+    console.log(myArray[i].name)
+    i++
+} while(i < myArray.length)
+  
+/*
+Output:
+  John
+  Jane
+  Martin
+  Katie
+  Louis
+*/
